@@ -1,7 +1,7 @@
-const Footer = ()=>{
-    return(
-        <footer>
-            <h5>Very nice website</h5>
+const Footer = () => {
+    return (
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
         </footer>
     )
 }

@@ -1,25 +1,26 @@
-import Article from "../article/Article"
+import Article from "../article/Article";
+import Category from "../category/Category";
+import Search from "../search/Search";
+import Section from "../section/Section";
+import Sidewidget from "../sidewidget/Sidewidget";
 
 
-const Main = ()=>{
-    return(
+const Main = () => {
+    return (
         <main>
-            <Article
-            title="Naujiena 1"
-            content="Puiki diena"
-            />
-            <Article
-            title="Naujiena 2"
-            content="Labai Puiki diena"
-            />
-            <Article
-            title="Naujiena 3"
-            content="Tikrai Puiki diena"
-            />
-            <Article
-            title="Naujiena 4"
-            content="Super Puiki diena"
-            />
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-8">
+                       <Article/> 
+                       <Section/>
+                    </div>
+                    <div class="col-lg-4">
+                        <Search/>
+                        <Category/>
+                        <Sidewidget/>
+                    </div>
+                </div>
+            </div>
         </main>
     )
 }
